@@ -723,18 +723,21 @@
 }
 
 @media (max-width: 575px) {
-   .u-section-3 {
-    min-height: 321px;
+  .u-section-3 .u-line-1 {
+    position: relative;      /* line back in flow */
+    width: 80%;              /* adjust width */
+    margin: 20px auto;       /* center it */
   }
 
   .u-section-3 .u-image-1 {
-    margin-left: calc(((100% - 340px) / 2)  + 16px);
+    margin: 20px auto;       /* spacing above and below logo */
+    width: 60%;              /* scale image on small screens */
+    height: auto;            /* keep aspect ratio */
   }
 
   .u-section-3 .u-text-1 {
-    width: 324px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 59px;
+    margin: 20px 15px 30px;  /* spacing around text */
+    width: auto;             /* full width minus padding */
+    text-align: center;      /* center text */
   }
 }
